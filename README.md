@@ -1,11 +1,11 @@
-Django E-commerce Application 🛍️
+# Django E-commerce Application 🛍️
 
-🚀 Introduction:
+# 🚀 Introduction:
 
 This is a foundational e-commerce web application built with Django and Django REST Framework. It features a robust multi-role user authentication system (distinguishing between buyers and vendors), comprehensive store and product management functionalities, a user-friendly shopping cart, product review capabilities, and a simulated external integration for real-time alerts.
 
 
-✨ Features
+# ✨ Features
 User Authentication & Authorization: Secure registration and login mechanisms tailored for distinct user roles.
 
 Flexible User Roles:
@@ -36,7 +36,7 @@ Flexible User Roles:
 
 
 
-🛠️ Technologies Used:
+# 🛠️ Technologies Used:
 
 - Backend Framework: Django 5.x
   
@@ -55,7 +55,7 @@ Flexible User Roles:
 - Email Simulation: Django's console.EmailBackend (for development/testing)
 
 
-⚙️ Setup Instructions:
+# ⚙️ Setup Instructions:
 Follow these steps to get the project up and running on your local machine.
 
 Prerequisites
@@ -75,7 +75,7 @@ Navigate to your project's root directory (where manage.py is located) and insta
 
 pip install Django djangorestframework djangorestframework-simplejwt Pillow
 
-Database Setup
+# Database Setup
 Apply database migrations to create the necessary tables and schema.
 
 python manage.py makemigrations
@@ -115,14 +115,14 @@ In the "Groups" section, move Vendors from "Available groups" to "Chosen groups"
 
 Click "Save".
 
-Run Development Server
+# Run Development Server
 Start the Django development server to access the application via your web browser.
 
 python manage.py runserver
 
 The application will be accessible at http://127.0.0.1:8000/.
 
-🔑 API Endpoints (with Postman)
+# 🔑 API Endpoints (with Postman)
 The RESTful API endpoints are protected using JWT (JSON Web Token) authentication. You will need to obtain an access token before making most API requests.
 
 Authentication
@@ -199,18 +199,18 @@ Method: GET
 
 URL: http://127.0.0.1:8000/api/products/<product_id>/reviews/
 
-🐦 Simulated External Integration
+# 🐦 Simulated External Integration
 When you successfully create a new Store or a new Product via their respective API POST endpoints, a simulated external alert (e.g., a "tweet") will be generated. The content of this alert will be printed directly to your Django development server's console. This demonstrates a potential integration point with actual external APIs like Twitter, Slack, or other notification services.
 
-🧪 Running Tests
+# 🧪 Running Tests
 (Currently, a specific test suite is not provided in this foundational setup. However, for robust production applications, Django's testing framework would be utilized.)
 
 To run Django's default tests (if you implement any later):
 
 python manage.py test
 
-📞 Contact
+# 📞 Contact
 For any questions, feedback, or collaborations, please feel free to reach out.
 
-📄 License
+# 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
